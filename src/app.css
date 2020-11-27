@@ -1,0 +1,13 @@
+.todoInput {
+    width: 75%;
+    margin: 3vh auto;
+}
+.todoItem {
+    margin: 1vh 1vw;
+}
+.btn-custom{
+    opacity: 0.6;
+}
+.btn-custom:hover{
+    opacity: 1;
+}
