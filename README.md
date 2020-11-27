@@ -6,7 +6,7 @@
 
 ### instalar dependencias necesarias
 
-npm install
+### `npm install`
 
 
 despues de instalar dependencias puedes ejecutar con:
