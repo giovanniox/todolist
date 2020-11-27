@@ -20,8 +20,9 @@ const TodoItem = ({ todo }) => {
     <div className="card-deck todoItem">
       <div className="card">
         <div className='card-header'>
-          <p>
-            <a onClick={()=>{
+          
+            <div onClick={(e)=>{
+              e.preventDefault();
               setTodoUpdate({
                 ...todoUpdate,
                 isComplete: !todoUpdate.isComplete
@@ -34,7 +35,7 @@ const TodoItem = ({ todo }) => {
                 }
               ))
             }} 
-            href="#" title="Placeholder link title" className="text-decoration-none">
+             className="text-decoration-none">
               {todoUpdate.isComplete ?
                 <span style={{ color:'#0fa90cc7'}}>
                   <svg width="2em" height="2em" style={{marginRight: '2px'}} viewBox="0 0 16 16" className="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -50,8 +51,8 @@ const TodoItem = ({ todo }) => {
               incompleto
               </span>
               }
-            </a>
-          </p>
+            </div>
+        
 
         </div>
         <div className="card-body">
